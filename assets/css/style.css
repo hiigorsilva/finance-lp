@@ -116,6 +116,28 @@ a {
   );
 }
 
+/* Estiliza a barra de rolagem */
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+/* Estiliza o indicador da barra de rolagem */
+::-webkit-scrollbar-thumb {
+  background: var(--black-2);
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+/* Estiliza a trilha da barra de rolagem */
+::-webkit-scrollbar-track {
+  background: var(--black);
+}
+/* Estiliza os botões de seta da barra de rolagem */
+::-webkit-scrollbar-button {
+  display: none;
+}
+
 /* HERO */
 .hero {
   position: relative;
@@ -162,6 +184,9 @@ a {
 }
 .hero .headline .info-data .avatar img + img {
   margin-left: -1rem;
+}
+.hero .content .currency {
+  position: relative;
 }
 .hero .name-expert {
   position: absolute;
@@ -822,9 +847,9 @@ a {
   display: block;
 }
 .price .content .rightside h3 {
-  font-size: 2rem;
-  font-weight: 500;
-  color: var(--white);
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--gray);
 }
 
 /* ABOUT ME */
@@ -1051,7 +1076,7 @@ a {
   display: block;
   width: 100vw;
   height: 100vh;
-  opacity: 0.07;
+  opacity: 0.06;
   background-image: url("../../media/thumb/ruido-animado.gif");
   overflow: hidden;
   position: fixed;
@@ -1102,7 +1127,7 @@ a {
   .about-me .content {
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    gap: 0rem;
   }
   .about-me .content .rightside .big-numbers {
     justify-content: flex-start;
@@ -1207,6 +1232,12 @@ a {
   .modules .mods li img {
     width: 100%;
     height: 100%;
+  }
+  .cta-area .shape::before {
+    display: none;
+  }
+  .footer .container {
+    text-align: center;
   }
 }
 @media (max-width: 580px) {
