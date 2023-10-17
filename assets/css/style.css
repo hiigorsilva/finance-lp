@@ -1,24 +1,29 @@
-@import url("https://fonts.googleapis.com/css2?family=Exo:wght@400;500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital@0;1&display=swap");
+/* FONTES LOCAIS */
+@font-face {
+  font-family: "Exo";
+  src: url("../fonts/Exo-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Exo";
+  src: url("../fonts/Exo-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Exo";
+  src: url("../fonts/Exo-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Exo", sans-serif;
-}
-:root {
-  --black: #080c08;
-  --black-2: #1e221e;
-  --white: #ffffff;
-  --green: #a3b43e;
-  --yellow: #d7e872;
-  --gray: #a2a4a2;
-  --gradient-accent: linear-gradient(
-    90deg,
-    var(--green) 0%,
-    var(--yellow) 100%
-  );
-  --gradient-box: linear-gradient(90deg, var(--black) 0%, var(--black-2) 150%);
 }
 html,
 body {
@@ -33,6 +38,20 @@ a {
 }
 
 /* UTILITIES */
+:root {
+  --black: #080c08;
+  --black-2: #1e221e;
+  --white: #ffffff;
+  --green: #a3b43e;
+  --yellow: #d7e872;
+  --gray: #a2a4a2;
+  --gradient-accent: linear-gradient(
+    90deg,
+    var(--green) 0%,
+    var(--yellow) 100%
+  );
+  --gradient-box: linear-gradient(90deg, var(--black) 0%, var(--black-2) 150%);
+}
 .container {
   max-width: 1140px;
   width: 100%;
