@@ -850,6 +850,24 @@ a {
   position: absolute;
   bottom: 10rem;
   right: -5rem;
+  animation: pulse-arrow 1.5s linear infinite alternate;
+  -webkit-animation: pulse-arrow 1.5s linear infinite alternate;
+}
+@keyframes pulse-arrow {
+  0% {
+    transform: scale(0.8) rotate(10deg) translateX(-1rem);
+    -webkit-transform: scale(0.8) rotate(10deg) translateX(-1rem);
+    -moz-transform: scale(0.8) rotate(10deg) translateX(-1rem);
+    -ms-transform: scale(0.8) rotate(10deg) translateX(-1rem);
+    -o-transform: scale(0.8) rotate(10deg) translateX(-1rem);
+  }
+  100% {
+    transform: scale(1) rotate(0deg) translateX(0);
+    -webkit-transform: scale(1) rotate(0deg) translateX(0);
+    -moz-transform: scale(1) rotate(0deg) translateX(0);
+    -ms-transform: scale(1) rotate(0deg) translateX(0);
+    -o-transform: scale(1) rotate(0deg) translateX(0);
+  }
 }
 .price .content .leftside .box .arrow-to-buy img {
   display: block;
@@ -1225,6 +1243,10 @@ a {
     align-items: center;
     gap: 2rem;
   }
+  .price .content .leftside .box .arrow-to-buy {
+    display: none;
+  }
+
   .cta-area .shape {
     padding-block: 4rem 3rem;
     padding-inline: 1.5rem;
