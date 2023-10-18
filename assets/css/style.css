@@ -758,9 +758,11 @@ a {
   z-index: -1;
 }
 .price .content .leftside {
+  position: relative;
   flex: 1;
 }
 .price .content .leftside .box {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -843,6 +845,14 @@ a {
 }
 .price .content .leftside .box .cta {
   min-width: 14.375rem;
+}
+.price .content .leftside .box .arrow-to-buy {
+  position: absolute;
+  bottom: 10rem;
+  right: -5rem;
+}
+.price .content .leftside .box .arrow-to-buy img {
+  display: block;
 }
 .price .content .leftside .box .flags-payment {
   display: flex;
